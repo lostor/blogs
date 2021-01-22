@@ -60,7 +60,7 @@ public class HistoryInterceptor implements Interceptor {
                 boundSql = (BoundSql) args[5];
             }
 
-            if (!ms.getId().startsWith("co.pinguan.pms.dao.OrderDao") && !ms.getId().startsWith("co.pinguan.pms.dao.FqDao")) {
+            if (!ms.getId().startsWith("xx.XDao")) {
                 return invocation.proceed();
             }
 
